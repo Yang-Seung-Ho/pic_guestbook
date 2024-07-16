@@ -1,0 +1,107 @@
+/* 전체 앱 스타일 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  color: #1a73e8;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* 입력 폼 스타일 */
+.input_holder {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.input_holder input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.input_holder button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input_holder button:hover {
+  background-color: #1557b0;
+}
+
+/* 리스트 스타일 */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon_holder {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #1a73e8;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .input_holder {
+    flex-direction: column;
+  }
+
+  .input_holder input,
+  .input_holder button {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .input_holder button {
+    margin-top: 0.5rem;
+  }
+}
