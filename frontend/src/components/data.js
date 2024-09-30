@@ -1,4 +1,4 @@
-var w = 60;
+var w = 60; //버블 너비 데이터
 
 export const data = [
   <img src="https://cdn.svgporn.com/logos/github-actions.svg" width={w} />,
